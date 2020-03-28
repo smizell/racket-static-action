@@ -1,3 +1,4 @@
-#!/bin/sh -l
+#!/usr/bin/env bash
 
-echo "Pollen version $(raco pollen version)"
+raco pollen publish $CONTENT_DIR $BUILD_DIR
+netlify deploy --dir=$BUILD_DIR --prod
