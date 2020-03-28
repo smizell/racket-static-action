@@ -1,0 +1,8 @@
+name: "Static Racket"
+description: "Install packages for Racket for building static sites"
+outputs:
+  version:
+    description: "Version information"
+runs:
+  using: "docker"
+  image: "Dockerfile"
