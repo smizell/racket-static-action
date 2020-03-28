@@ -1,5 +1,5 @@
 FROM jackfirth/racket
-RUN raco pkg install pollen --auto --batch
-RUN raco pkg install frog --auto --batch
+RUN raco pkg install --auto --batch pollen
+RUN raco pkg install --auto --batch frog
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
